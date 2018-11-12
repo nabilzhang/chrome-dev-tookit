@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>远山工具箱-时间戳</title>
+	<meta charset="utf-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style>
+	.strings_main {
+		font-family: 'Microsoft Yahei';
+		width: 500px;
+		min-height: 100px;
+
+	a {margin-right: 10px;}
+  .strings_main input.text {
+    width: 150px;
+  }
+  .strings_main label.form_left {
+    width: 60px;
+  }
+  .strings_main span.form_left {
+    display: inline-block;
+    width: 60px;
+  }
+  .strings_main p{
+    line-height: 2em;
+    vertical-align: middle;
+  }
+	</style>
+</head>
+<body>
+  <div class="strings_main">
+    <p>
+        <label class="form_left">字符串反转</label>
+        <input type="text" class="text" id="string" name="string">
+        <button id="reverse-string" type="button" class=" waves-effect">转换<i class="fas fa-angle-double-right"></i></button>
+        <input type="text" class="text" id="reversed-string" name="datetime">
+    </p>
+  </div>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/strings.js"></script>
+</body>
+</html>

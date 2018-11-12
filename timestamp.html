@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>远山工具箱-时间戳</title>
+	<meta charset="utf-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style>
+	.timestamp_main {
+		font-family: 'Microsoft Yahei';
+		width: 500px;
+		min-height: 100px;
+	}
+	a {margin-right: 10px;}
+  .timestamp_main input.text {
+    width: 150px;
+  }
+  .timestamp_main label.form_left {
+    width: 60px;
+  }
+  .timestamp_main span.form_left {
+    display: inline-block;
+    width: 60px;
+  }
+  .timestamp_main p{
+    line-height: 2em;
+    vertical-align: middle;
+  }
+	</style>
+</head>
+<body>
+  <div class="timestamp_main">
+    <p>
+        <label class="form_left">时间戳</label>
+        <input type="text" class="text" id="js_timestamp" name="timestamp">
+        <select id="js_timestamp_unit" name="timestamp_unit">
+            <option value="s">秒(s)</option>
+            <option value="ms">毫秒(ms)</option>
+        </select>
+        <button id="js_convert_timestamp" type="button" class=" waves-effect">转换 <i class="fas fa-angle-double-right"></i></button>
+        <input type="text" class="text" id="js_datetime" name="datetime">
+    </p>
+
+    <p>
+        <label class="form_left">时间</label>
+        <input type="text" class="text" id="js_datetime_o" name="datetime_o">
+        <button id="js_convert_datetime" type="button" class=" waves-effect">转换 <i class="fas fa-angle-double-right"></i></button>
+        <input type="text" class="text" id="js_timestamp_o" name="timestamp_o">
+        <select id="js_timestamp_unit_o" name="timestamp_unit_o">
+            <option value="s">秒(s)</option>
+            <option value="ms">毫秒(ms)</option>
+        </select>
+    </p>
+  </div>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/moment.min.js"></script>
+  <script type="text/javascript" src="js/timestamp.js"></script>
+</body>
+</html>
