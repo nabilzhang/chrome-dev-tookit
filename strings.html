@@ -7,12 +7,11 @@
 	<style>
 	.strings_main {
 		font-family: 'Microsoft Yahei';
-		width: 500px;
 		min-height: 100px;
 
 	a {margin-right: 10px;}
   .strings_main input.text {
-    width: 150px;
+    width: 300px;
   }
   .strings_main label.form_left {
     width: 60px;
@@ -31,9 +30,16 @@
   <div class="strings_main">
     <p>
         <label class="form_left">字符串反转</label>
-        <input type="text" class="text" id="string" name="string">
+        <input type="text" class="text" id="string">
         <button id="reverse-string" type="button" class=" waves-effect">转换<i class="fas fa-angle-double-right"></i></button>
-        <input type="text" class="text" id="reversed-string" name="datetime">
+        <input type="text" class="text" id="reversed-string">
+    </p>
+    <p>
+        <label class="form_left">URL</label>
+        <input type="text" class="text" id="url-input">
+        <button id="url-encode-btn" type="button" class=" waves-effect">Encode<i class="fas fa-angle-double-right"></i></button>
+        <button id="url-decode-btn" type="button" class=" waves-effect">Decode<i class="fas fa-angle-double-right"></i></button>
+        <input type="text" class="text" id="url-output">
     </p>
   </div>
   <script type="text/javascript" src="js/jquery.js"></script>
